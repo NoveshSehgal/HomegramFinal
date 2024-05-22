@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="tanustyle.css" />
+    <link rel="stylesheet" href="tanumediaqueries.css" />
+    <style type="text/css">
+      body{
+        background-image: url(/Assets/test\ background.png);
+        background-size: cover;
+        background-repeat: repeat-y;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">HOMEGRAM</div>
+  
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="/kritikaindex.html">Kritika</a></li>
+        <li><a href="/snehaindex.html">Sneha</a></li>
+        <li><a href="/tanuindex.html">Tanu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">John Doe</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="/kritikaindex.html" onclick="toggleMenu()">Kritika</a></li>
+        <li><a href="/snehaindex.html" onclick="toggleMenu()">Sneha</a></li>
+        <li><a href="/tanuindex.html" onclick="toggleMenu()">Tanu</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./TanuAssets/tanu1.jpg" alt="profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Tanu Arora</h1>
+      <p class="section__text__p2">Senior Portfolio Manager</p>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('./assets/resume-example.pdf')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img
+          src="./KritikaAssets/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://https://www.linkedin.com/in/tanu-arora-690b20250/'"
+        />
+        <img
+          src="./KritikaAssets/instagram.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://www.instagram.com/kritika_jalan24/'"
+        />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img
+          src="TanuAssets/tanu2.jpg"
+          alt="Profile picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./KritikaAssets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>2+ years <br />Sales Consultant</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./KritikaAssets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>MBA Sustainable Energy<br />PGDM Merchandising</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Hello, I'm Tanu Arora proud graduate of Guru Nanak Dev University. My journey has been a testament to resilience and strength. Starting my career in retail, I quickly realized my passion lay elsewhere - in the fast-paced world of real estate.
+            <br>
+            Transitioning from a familiar environment to a new industry wasn't easy, but I embraced the challenge wholeheartedly. Each hurdle I faced only fueled my determination to succeed. Through hard work and perseverance, I transformed setbacks into stepping stones, building a thriving career in real estate.
+            <br>
+            My education has provided me with a solid foundation, while my experiences have taught me the importance of adaptability and grit. Today, I stand as a testament to the power of resilience, ready to guide you through your real estate journey with confidence and expertise.
+            
+          </p>
+        </div>
+      </div>
+    </div>
+    <img
+      src="/Assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+    />
+  </section>
+  <section id="Reviews">
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-29d6e1c1-6ed6-4b65-aaed-65d4b8e8a8cd" data-elfsight-app-lazy></div>
+
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="/Assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:jalan.kritikatj@investorsclinic.com">jalan.kritikatj@investorsclinic.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="/Assets/phone.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="">+91 88519 64896</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
