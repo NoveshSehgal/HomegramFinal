@@ -672,5 +672,15 @@ footer p {
   }
 }
 
+#about {
+  margin-top: 10rem;
+}
 
+#contact {
+ height: 10px;
+  margin-bottom: 10rem;
+}
+.section__text__p1 {
+  padding: 10px;
+}
 adjust this style sheet to be compatible for all devices

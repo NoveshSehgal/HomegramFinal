@@ -639,7 +639,7 @@ footer p {
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .contact-info-container {
     margin: 0;
@@ -672,6 +672,15 @@ footer p {
     text-align: justify;
   }
 }
+
+#about {
+  margin-top: 15rem;
+}
+
+.section__pic-container {
+  margin-top: 30px;
+}
+
 
 
 adjust this style sheet to be compatible for all devices

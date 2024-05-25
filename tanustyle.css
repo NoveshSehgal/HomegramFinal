@@ -672,5 +672,10 @@ footer p {
   }
 }
 
+#about {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
 
 adjust this style sheet to be compatible for all devices
