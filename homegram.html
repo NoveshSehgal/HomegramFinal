@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="homegramstyle.css" />
+    <title>Homegram</title>
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/css">
+      body {
+        background-image: url(/Assets/bg.png);
+        background-size: contain;
+        background-repeat: repeat-y;
+      }
+    </style>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -15,7 +22,6 @@
       <div>
         <ul class="nav-links">
           <li><a href="/index.html">Home</a></li>
-          <li><a href="#about">About Us</a></li>
           <li><a href="/kritikaindex.html">Kritika</a></li>
           <li><a href="/snehaindex.html">Sneha</a></li>
           <li><a href="/tanuindex.html">Tanu</a></li>
@@ -45,63 +51,129 @@
         </div>
       </div>
     </nav>
-    
-    <h2>Client Events</h2>
-    <p>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="homegramstyle.css" />
+        <title>CSS Grid Gallery</title>
+    </head>
+    <body>
+      <section id="Client Events">
+      <h1>Client Events</h1>
       <br>
-      At Homegram, we prioritize complete transparency and honesty in all our client interactions. Our dedicated team consults clients to help them find the best investment opportunities or the perfect home, ensuring they make informed decisions. We believe in building strong, trustworthy relationships, guiding our clients with integrity at every step. This commitment to excellence and personalized service fosters lasting connections, leading clients to stay associated with us long into the future. At Homegram, our clients are our partners, and their success is our success. <br><br>
-    </p>
-    <div class="galleryblock">
-      <div class="image1"><img src="/Assets/Event 1.jpg" alt=""></div>
-      <div class="image2"><img src="Assets/event 2.jpg" alt=""></div>
-      <div class="image3"><img src="/Assets/event 3.jpg" alt=""></div>
-      <div class="image4"><img src="/Assets/event 4.jpg" alt=""></div>
-      <div class="image5"><img src="/Assets/event5.jpg" alt=""></div>
-      <div class="image6"><img src="/Assets/event6.jpg" alt=""></div>
-      <div class="image6"><img src="/Assets/clientevent.jpg" alt=""></div>
-    </div>
 
-    <h2>HOMEGRAM Events</h2>
-    <p><br>
-      At Homegram, we cherish every moment together, whether it's a festive celebration or just some pleasant time off from work. Our team spirit shines brightly during Diwali, New Year and Holi, where we come together to celebrate our achievements as one big family. From hosting successful events to organizing memorable international trips, we create lasting bonds and unforgettable experiences. We believe in supporting each other, ensuring that no one feels left out, and celebrating every success, big or small. At Homegram, unity and camaraderie are at the heart of everything we do, making every occasion special and every challenge easier to overcome together.
-      <br><br>
-    </p>
-    <div class="galleryblock">
-      <div class="image1"><img src="/Assets/Event 1.jpg" alt=""></div>
-      <div class="image2"><img src="Assets/event 2.jpg" alt=""></div>
-      <div class="image3"><img src="/Assets/event 3.jpg" alt=""></div>
-      <div class="image4"><img src="/Assets/event 4.jpg" alt=""></div>
-      <div class="image5"><img src="/Assets/event5.jpg" alt=""></div>
-      <div class="image6"><img src="/Assets/event6.jpg" alt=""></div>
-      <div class="image7"><img src="static/photos/loser-cassi.jpg" alt=""></div>
-    </div>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="/Assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-          <p><a href="mailto:jalan.kritikatj@investorsclinic.com">jalan.kritikatj@investorsclinic.com</a></p>
+      At Homegram, we prioritize complete transparency and honesty in all our client interactions. Our dedicated team consults clients to help them find the best investment opportunities or the perfect home, ensuring they make informed decisions. We believe in building strong, trustworthy relationships, guiding our clients with integrity at every step. This commitment to excellence and personalized service fosters lasting connections, leading clients to stay associated with us long into the future. At Homegram, our clients are our partners, and their success is our success.
+      <br>
+      <br>
+        <div class="gallery">
+            <div class="image-container">
+                <img class="four-grid-cells" src="/Assets/Event 1.jpg" alt="Northern Winter Sky Image" />
+                <div class="overlay">
+                    <span class="title">Northern Winter Sky</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="Assets/event 2.jpg" alt="Shining Stars Image" />
+                <div class="overlay">
+                    <span class="title">Shining Stars</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img class="wide-image" src="/Assets/event 3.jpg" alt="A River Flowing Image" />
+                <div class="overlay">
+                    <span class="title">A River Flowing</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="/Assets/event 4.jpg" alt="A cloudy Mountain Image" />
+                <div class="overlay">
+                    <span class="title">A Cloudy Mountain</span>
+                </div>
+            </div>  
+            <div class="image-container">
+                <img class="wide-image" src="/Assets/event6.jpg" alt="A Clean Mountain Lake" />
+                <div class="overlay">
+                    <span class="title">A Clean Mountain Lake</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg" alt="Shining Stars Image" />
+                <div class="overlay">
+                    <span class="title">Shining Stars</span>
+                </div>
+            </div>
         </div>
-        <div class="contact-info-container">
-          <img src="/Assets/phone.png" alt="Phone icon" class="icon contact-icon" />
-          <p><a href="">+91 88519 64896</a></p>
+      </section>
+      <section id="homegram events">
+        <h1>Homegram Events</h1>
+        <br>
+        
+        At Homegram, we cherish every moment together, whether it's a festive celebration or just some pleasant time off from work. Our team spirit shines brightly during Diwali, New Year and Holi, where we come together to celebrate our achievements as one big family. From hosting successful events to organizing memorable international trips, we create lasting bonds and unforgettable experiences. We believe in supporting each other, ensuring that no one feels left out, and celebrating every success, big or small. At Homegram, unity and camaraderie are at the heart of everything we do, making every occasion special and every challenge easier to overcome together.
+        <br>
+        <br>
+        <div class="gallery">
+            <div class="image-container">
+                <img class="four-grid-cells" src="/Assets/Event 1.jpg" alt="Northern Winter Sky Image" />
+                <div class="overlay">
+                    <span class="title">Northern Winter Sky</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="Assets/event 2.jpg" alt="Shining Stars Image" />
+                <div class="overlay">
+                    <span class="title">Shining Stars</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img class="wide-image" src="/Assets/event 3.jpg" alt="A River Flowing Image" />
+                <div class="overlay">
+                    <span class="title">A River Flowing</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="/Assets/event 4.jpg" alt="A cloudy Mountain Image" />
+                <div class="overlay">
+                    <span class="title">A Cloudy Mountain</span>
+                </div>
+            </div>
+    
+            <div class="image-container">
+                <img class="wide-image" src="/Assets/event6.jpg" alt="A Clean Mountain Lake" />
+                <div class="overlay">
+                    <span class="title">A Clean Mountain Lake</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg" alt="Shining Stars Image" />
+                <div class="overlay">
+                    <span class="title">Shining Stars</span>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
+      </section>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    
+        <script src="gallery.js"></script>
+    </body>
+    </html>
+    
 
-    <!-- Footer -->
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="/index.html">Home</a></li>
-            <li><a href="#about">About Us</a></li>
             <li><a href="/kritikaindex.html">Kritika</a></li>
             <li><a href="/snehaindex.html">Sneha</a></li>
             <li><a href="/tanuindex.html">Tanu</a></li>
+            <li><a href="/homegram.html">Our Events</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>

@@ -106,3 +106,34 @@ function toggleMenu() {
   menuLinks.classList.toggle('open');
   hamburgerIcon.classList.toggle('open');
 }
+
+<div class='sk-ww-google-reviews' data-embed-id='25417371'></div><script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("myModal");
+  const modalImg = document.getElementById("img01");
+  const captionText = document.getElementById("caption");
+  const span = document.getElementsByClassName("close")[0];
+  const images = document.querySelectorAll('.gallery img');
+
+  images.forEach(img => {
+      img.addEventListener("click", function () {
+          console.log("Image clicked!");
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      });
+  });
+
+  span.onclick = function () {
+      modal.style.display = "none";
+  }
+
+  modal.onclick = function (e) {
+      if (e.target !== modalImg) {
+          modal.style.display = "none";
+      }
+  }
+});
