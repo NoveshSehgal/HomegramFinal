@@ -116,3 +116,54 @@ function openReachOutPopup() {
 
     popup.style.display = 'block';
 }
+
+// Testimonial Swiping Functionality
+const testimonialContainer = document.querySelector('.wrapper');
+let startX = 0;
+let endX = 0;
+
+testimonialContainer.addEventListener('touchstart', function(event) {
+    startX = event.touches[0].clientX;
+});
+
+testimonialContainer.addEventListener('touchend', function(event) {
+    endX = event.changedTouches[0].clientX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const sensitivity = 50; // Adjust this value for swipe sensitivity
+
+    if (startX - endX > sensitivity) {
+        // Swiped left, show next testimonial
+        showNextTestimonial();
+    } else if (endX - startX > sensitivity) {
+        // Swiped right, show previous testimonial
+        showPreviousTestimonial();
+    }
+}
+
+function showNextTestimonial() {
+    if (currentTestimonial < indicators.length - 1) {
+        currentTestimonial++;
+        updateTestimonial();
+    }
+}
+
+function showPreviousTestimonial() {
+    if (currentTestimonial > 0) {
+        currentTestimonial--;
+        updateTestimonial();
+    }
+}
+
+function updateTestimonial() {
+    indicators.forEach((item, i) => {
+        if (i === currentTestimonial) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+    wrapper.style.marginLeft = `-${100 * currentTestimonial}%`;
+}
