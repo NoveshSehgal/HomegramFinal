@@ -274,7 +274,6 @@ a:hover {
   opacity: 1;
 }
 
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -283,14 +282,15 @@ a:hover {
   gap: 6px;
 }
 
+
 .image-container {
   position: relative;
 }
 
 img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 100%; /* Ensure the aspect ratio is maintained */
+  object-fit: cover; /* Adjust as needed */
   cursor: pointer;
 }
 
@@ -326,7 +326,7 @@ img.wide-image {
 
 @media screen and (max-width: 768px) {
   .gallery {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust min and max width as needed */
   }
 }
 
@@ -455,7 +455,6 @@ footer p {
   text-align: center;
 }
 
-
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -559,6 +558,12 @@ footer p {
   .text-container {
     text-align: justify;
   }
+  img {
+    width: 100%;
+    height: auto; /* Ensure the aspect ratio is maintained */
+    object-fit: cover; /* Adjust as needed */
+    cursor: pointer;
+  }
 }
 
 
@@ -568,3 +573,4 @@ footer p {
   margin-top: 20rem;
 }
 }
+
