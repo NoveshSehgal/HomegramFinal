@@ -290,7 +290,7 @@ a:hover {
 img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   cursor: pointer;
 }
 
@@ -345,7 +345,6 @@ img.wide-image {
   }
 }
 
-
 /* Modal styles */
 .modal {
   display: none;
@@ -364,8 +363,8 @@ img.wide-image {
 .modal-content {
   margin: auto;
   display: block;
-  width: 100%;
-  max-width: 1000px;
+  width: 80%;
+  max-width: 7000px;
 }
 
 #caption {
@@ -404,10 +403,6 @@ img.wide-image {
   text-decoration: none;
   cursor: pointer;
 }
-
-
-
-
 
 /* CONTACT */
 
@@ -566,19 +561,6 @@ footer p {
   }
 }
 
-.gallery {
-  grid-template-columns: 1fr; /* Ensure one column layout on smaller screens */
-}
-
-img.four-grid-cells {
-  grid-row: auto;
-  grid-column: auto;
-}
-
-img.wide-image {
-  grid-column: span 1 / auto; /* Ensure wide images take full width */
-}
-}
 
 #contact {
 
