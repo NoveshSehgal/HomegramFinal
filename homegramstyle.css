@@ -290,7 +290,7 @@ a:hover {
 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   cursor: pointer;
 }
 
@@ -344,6 +344,7 @@ img.wide-image {
     grid-column: auto;
   }
 }
+
 
 /* Modal styles */
 .modal {
@@ -565,6 +566,19 @@ footer p {
   }
 }
 
+.gallery {
+  grid-template-columns: 1fr; /* Ensure one column layout on smaller screens */
+}
+
+img.four-grid-cells {
+  grid-row: auto;
+  grid-column: auto;
+}
+
+img.wide-image {
+  grid-column: span 1 / auto; /* Ensure wide images take full width */
+}
+}
 
 #contact {
 
